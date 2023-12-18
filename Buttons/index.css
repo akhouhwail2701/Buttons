@@ -1,0 +1,484 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.background button {
+  width: 20%;
+  height: 10%;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.background button:first-child {
+  color: #833ab4;
+  border: 2px transparent solid;
+  position: relative;
+}
+.background button:first-child span {
+  background-color: #833ab4;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.background button:first-child:hover {
+  -webkit-box-shadow: 0px 0px 20px 10px #833ab4;
+          box-shadow: 0px 0px 20px 10px #833ab4;
+  border: none;
+  background-color: #833ab4;
+  color: #000;
+}
+.background button:first-child:hover > span {
+  opacity: 0.25;
+  -webkit-box-shadow: 0px 0px 10px 5px #833ab4;
+          box-shadow: 0px 0px 10px 5px #833ab4;
+}
+.background button:first-child div {
+  -webkit-box-shadow: 0px 0px 15px 5px #833ab4;
+          box-shadow: 0px 0px 15px 5px #833ab4;
+}
+.background button:first-child div.top {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: #833ab4;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.background button:first-child div.right {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  background-color: #833ab4;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.background button:first-child div.bottom {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  background-color: #833ab4;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button:first-child div.left {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  background-color: #833ab4;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button:nth-child(2) {
+  color: #ff0057;
+  border: 2px transparent solid;
+  position: relative;
+}
+.background button:nth-child(2) span {
+  background-color: #ff0057;
+}
+.background button:nth-child(2):hover {
+  -webkit-box-shadow: 0px 0px 20px 10px #ff0057;
+          box-shadow: 0px 0px 20px 10px #ff0057;
+  border: none;
+  background-color: #ff0057;
+  color: #000;
+}
+.background button:nth-child(2):hover > span {
+  opacity: 0.25;
+  -webkit-box-shadow: 0px 0px 10px 5px #ff0057;
+          box-shadow: 0px 0px 10px 5px #ff0057;
+}
+.background button:nth-child(2) div {
+  -webkit-box-shadow: 0px 0px 15px 5px #ff0057;
+          box-shadow: 0px 0px 15px 5px #ff0057;
+}
+.background button:nth-child(2) div.top {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: #ff0057;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.background button:nth-child(2) div.right {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  background-color: #ff0057;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.background button:nth-child(2) div.bottom {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  background-color: #ff0057;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button:nth-child(2) div.left {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  background-color: #ff0057;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button:last-child {
+  color: #f07ed3;
+  border: 2px transparent solid;
+  position: relative;
+}
+.background button:last-child span {
+  background-color: #f07ed3;
+}
+.background button:last-child:hover {
+  -webkit-box-shadow: 0px 0px 20px 10px #f07ed3;
+          box-shadow: 0px 0px 20px 10px #f07ed3;
+  border: none;
+  background-color: #f07ed3;
+  color: #000;
+}
+.background button:last-child:hover > span {
+  opacity: 0.25;
+  -webkit-box-shadow: 0px 0px 10px 5px #f07ed3;
+          box-shadow: 0px 0px 10px 5px #f07ed3;
+}
+.background button:last-child div {
+  -webkit-box-shadow: 0px 0px 15px 5px #f07ed3;
+          box-shadow: 0px 0px 15px 5px #f07ed3;
+}
+.background button:last-child div.top {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: #f07ed3;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.background button:last-child div.right {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  background-color: #f07ed3;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.background button:last-child div.bottom {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  background-color: #f07ed3;
+  width: 10%;
+  height: 2px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button:last-child div.left {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  background-color: #f07ed3;
+  width: 2px;
+  height: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+  opacity: 0;
+}
+.background button span {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  color: #000;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+@-webkit-keyframes top {
+  0% {
+    left: 0%;
+    opacity: 0%;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+
+@keyframes top {
+  0% {
+    left: 0%;
+    opacity: 0%;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes right {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    top: 80%;
+    opacity: 0;
+  }
+}
+@keyframes right {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    top: 80%;
+    opacity: 0;
+  }
+}

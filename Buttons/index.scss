@@ -1,0 +1,335 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    button{
+        width: 20%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition-duration: 1s;
+        
+        &:first-child{
+            color: #833ab4;
+            border: 2px transparent solid;
+            position: relative;
+            span{
+                background-color: #833ab4;
+                transition-duration: 1s;
+            }
+            &:hover{
+                box-shadow: 0px 0px 20px 10px #833ab4;
+                border: none;
+                background-color: #833ab4;
+                color: #000;
+                >span{
+                    opacity: 0.25;
+                    box-shadow: 0px 0px 10px 5px #833ab4;
+                }
+            }
+            div{
+                box-shadow: 0px 0px 15px 5px #833ab4;
+                &.top{
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    background-color: #833ab4;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(-50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+                &.right{
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    background-color: #833ab4;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
+                }
+                &.bottom{
+                    position: absolute;
+                    right: 0%;
+                    bottom: 0%;
+                    background-color: #833ab4;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-delay: 1.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+                &.left{
+                    position: absolute;
+                    left: 0%;
+                    top: 80%;
+                    background-color: #833ab4;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(-50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 2.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+            }
+        }
+        &:nth-child(2){
+            color: #ff0057;
+            border: 2px transparent solid;
+            position: relative;
+            span{
+                background-color: #ff0057;
+            }
+            &:hover{
+                box-shadow: 0px 0px 20px 10px #ff0057;
+                border: none;
+                background-color: #ff0057;
+                color: #000;
+                >span{
+                    opacity: 0.25;
+                    box-shadow: 0px 0px 10px 5px #ff0057;
+                }
+            }
+            div{
+                box-shadow: 0px 0px 15px 5px #ff0057;
+                &.top{
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    background-color: #ff0057;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(-50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+                &.right{
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    background-color: #ff0057;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
+                }
+                &.bottom{
+                    position: absolute;
+                    right: 0%;
+                    bottom: 0%;
+                    background-color: #ff0057;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-delay: 1.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+                &.left{
+                    position: absolute;
+                    left: 0%;
+                    top: 80%;
+                    background-color: #ff0057;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(-50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 2.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+            }
+            
+        }
+        &:last-child{
+            color: #f07ed3;
+            border: 2px transparent solid;
+            position: relative;
+            span{
+                background-color: #f07ed3;
+            }
+            &:hover{
+                box-shadow: 0px 0px 20px 10px #f07ed3;
+                border: none;
+                background-color: #f07ed3;
+                color: #000;
+                >span{
+                    opacity: 0.25;
+                    box-shadow: 0px 0px 10px 5px #f07ed3;
+                }
+            }
+            div{
+                box-shadow: 0px 0px 15px 5px #f07ed3;
+                &.top{
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    background-color: #f07ed3;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(-50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+                &.right{
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    background-color: #f07ed3;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
+                }
+                &.bottom{
+                    position: absolute;
+                    right: 0%;
+                    bottom: 0%;
+                    background-color: #f07ed3;
+                    width: 10%;
+                    height: 2px;
+                    transform: translateY(50%);
+                    animation-name: top;
+                    animation-duration: 1s;
+                    animation-delay: 1.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+                &.left{
+                    position: absolute;
+                    left: 0%;
+                    top: 80%;
+                    background-color: #f07ed3;
+                    width: 2px;
+                    height: 20%;
+                    transform: translateX(-50%);
+                    animation-name: right;
+                    animation-duration: 0.5s;
+                    animation-delay: 2.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-direction: reverse;
+                    opacity: 0;
+                }
+            }
+        }
+        span{
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            color: #000;
+            transform: rotateX(180deg);
+            transition-duration: 1s;
+        }
+    }
+}
+@keyframes top {
+    0%{
+        left: 0%;
+        opacity: 0%;
+    }
+    1%{
+        opacity: 1;
+    }
+    50%{
+        transform: scaleX(2);
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes right {
+    0%{
+        top: 0%;
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    50%{
+        transform: scaleY(2);
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        top: 80%;
+        opacity: 0;
+    }
+}
